@@ -1,0 +1,169 @@
+.container{
+    height: 100vh;
+}
+.content{
+    background-color: #fafafa;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    &>.contentRight{
+        position: relative;
+        flex:7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:20px;
+        &>.questionBox{
+            z-index: 3;
+            width: 90%;
+            padding:20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            &>.questionIp{
+                border:none;
+                outline:none;
+                width: 80%;
+                height: 95%;
+                font-size: 25px;
+                text-align: center;
+                background-color: transparent;
+                font-weight: 550;
+                color: rgb(51, 51, 51);
+            }
+        }
+        &>.answerBox{
+            z-index: 3;
+            padding:20px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            &>.choice{
+                background-color: white;
+                position: relative;
+                width: 48%;
+                height: 150px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                border-radius: 8px;
+                border:none;
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                &>.choiceIp{
+                    border: none;
+                    outline:none;
+                    margin-left: 15px;
+                    width: 70%;
+                    height: 80%;
+                    padding:10px;
+                    font-size: 25px;
+                    background-color: transparent;
+                    font-weight: 550;
+                    color: rgb(51, 51, 51);
+                }
+                &>.choiceIcon{
+                    height: 80%;
+                    width: 50px;
+                    background-color: red;
+                    position: absolute;
+                    left: 10px;
+                    top: 50%; 
+                    border-radius: 10px;
+                    transform: translateY(-50%);
+                    &>div{
+                        width: 40px;
+                        height: 40px;
+                        background-color: white;
+                        border:1px #d5d5d5 solid;
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                        left: 4px;
+                    }
+                }
+                &>.correctAnswer{
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top:50%;
+                    transform: translateY(-50%);
+                    right:10px;
+                    appearance: none;
+                    border-radius: 50%;
+                    background-color: #333333;
+                }
+                &>.correctAnswer:checked{
+                    opacity: 1;
+                    background-color: #66bf39;
+                    color:white;
+                 }
+             
+            }
+        }
+    }
+}
+.title{
+    font-size: 40px;
+    margin-top: 30px;
+    box-sizing: content-box;
+}
+.wrapper{
+    margin:0;
+    padding:0;
+}
+.AdminBG{
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.95;
+}
+.SaveQuestionBtn{
+    position: absolute;
+    top:15px;
+    right:15px;
+    padding: 15px 20px;
+    background-color: rgb(242, 242, 242);
+    color:#333333;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 6px;
+    border: none;
+    outline:none;
+    transition: all ease .2s;
+    cursor: pointer;
+    z-index: 10;
+    &:hover{
+        background-color: rgb(223 223 223);
+        box-shadow: none;
+        margin-top: 2px;
+    }
+}
+.DeleteQuestionBtn{
+    position: absolute;
+    top:15px;
+    right:120px;
+    padding: 15px 20px;
+    background-color: rgb(226, 27, 60);
+    color:white;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 6px;
+    border: none;
+    outline:none;
+    transition: all ease .2s;
+    cursor: pointer;
+    z-index: 10;
+    &:hover{
+        background-color: rgb(225, 17, 52);
+        box-shadow: none;
+        margin-top: 2px;
+    }
+}

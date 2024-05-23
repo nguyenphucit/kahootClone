@@ -1,0 +1,78 @@
+.container{
+    width: 450px;
+    padding:40px 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+}
+.wrapper{
+    &>.title{
+        color:rgba(51,51,51);
+        font-size: 30px;
+    }
+    &>form{
+        height: 100%;
+        padding:0px 30px;
+        &>.RegisterInput{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+            &>.inputlabel{
+                color:rgba(51,51,51);
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            &>.inputbar{
+                padding:10px 20px;
+                font-size: 20px;
+                border-radius: 5px;
+                width: 100%;
+                border:1px rgba(204,204,204) solid;
+                outline:none;
+            }
+        }
+        &>.RegisterBtn{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            &>button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                outline:none;
+                border:none;
+                background-color: rgba(204,204,204);
+                border-radius: 4px;
+                color:white;
+                font-size: 16px;
+                font-weight: 800;
+                // box-shadow: rgba(0, 0, 0, 0.25) 0px -4px inset;
+            }
+        
+            &>button:hover{
+                cursor:not-allowed;
+                background-color: rgba(158,158,158);
+            }
+        }
+    }
+}
+.allow{
+    &>button{
+    background-color:  rgb(204 8 56) !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -4px inset;
+    border-radius: 4px !important;
+    &:hover{
+        cursor: pointer !important;
+        background-color: rgb(204 8 56) !important;
+        box-shadow: none;
+        margin-top: 2px !important;
+        }
+    }
+}

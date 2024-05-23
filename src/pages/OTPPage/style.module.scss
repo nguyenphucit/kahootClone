@@ -1,0 +1,72 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    height: 600px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    &>.OTP_logo{
+        flex:1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &>img{
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+        }
+    }
+    &>.OTP_content{
+        flex:1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &>.OTP_title{
+            font-weight: bold;
+            font-size: 25px;
+            color:#333333;
+            margin-bottom: 10px;
+        }
+        &>.OTP_mail{
+            color:rgb(195, 195, 195);
+            font-weight: 600;
+            margin-bottom: 10px;
+            &>b{
+                color:black;
+            }
+        }
+        &>button{
+            background: rgb(204, 8, 56);
+            width: 90%;
+            padding:15px 20px;
+            box-sizing: border-box;
+            outline:none;
+            border: none;
+            border-radius: 6px;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 30px;
+            color:white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            &:hover{
+                cursor: pointer;
+                margin-top: 35px;
+                box-shadow: none;
+                background: rgb(204, 8, 56);
+            }
+        }
+    }
+}
